@@ -34,7 +34,7 @@ void QueenSearch(int column) {//column往後(為第二項) 可用的資料 ：ow
 //						cout << ans[i][j] << " ";
 //					cout << endl;
 //				}
-			}
+			} 
 		}
 //		else cout << column << " - " << row << " 無法使用" << endl;
 	}
