@@ -52,11 +52,11 @@ public class Main {
                             ii++;
                             i+=2;
                             time += 3;
-         //                   System.out.println( "位置: "+ ii); 
-         //                   for (String strr : arr) { 
-         //                       System.out.print(strr + " "); 
-        //                    } 
-        //                    System.out.println("");
+                            System.out.println( "位置: "+ ii); 
+                            for (String strr : arr) { 
+                                System.out.print(strr + " "); 
+                            } 
+                            System.out.println("");
                         }
                     }
                 }
@@ -101,11 +101,11 @@ public class Main {
                     else arr.add(temp2);
                     i++;
                     time +=3;
-        //            System.out.println( "位置: "+ i); 
-        //            for (String strr : arr) { 
-       //                 System.out.print(strr + " "); 
-        //            } 
-       //             System.out.println("");
+                    System.out.println( "位置: "+ i); 
+                    for (String strr : arr) { 
+                        System.out.print(strr + " "); 
+                    } 
+                    System.out.println("");
                 }
             }
         }
@@ -129,18 +129,21 @@ public class Main {
                             k++;
                         if(arr.get(i+3+time+k).charAt(0) =='*'||arr.get(i+3+time+k).charAt(0) =='/'||arr.get(i+3+time+k).charAt(0) =='%' )
                            time+=4;
-                        if(i+3+time < arr.size())
-                            arr.add(i+3+time, temp2);
+                        k=0;
+                        while(arr.get(i+2+time+k).charAt(0) =='*'||arr.get(i+2+time+k).charAt(0) =='/'||arr.get(i+2+time+k).charAt(0) =='%' )
+                           k++;
+                        if(i+3+time+k < arr.size())
+                            arr.add(i+3+time+k, temp2);
                         else arr.add(temp2);
                     }
                     else arr.add(temp2);
                     i++;
                     time +=4;
-       //             System.out.println( "位置: "+ i); 
-       //             for (String strr : arr) { 
-      //                  System.out.print(strr + " "); 
-      //              } 
-     //               System.out.println("");
+                   System.out.println( "位置: "+ i); 
+                    for (String strr : arr) { 
+                        System.out.print(strr + " "); 
+                    } 
+                    System.out.println("");
                 }
             }
         }
