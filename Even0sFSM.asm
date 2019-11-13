@@ -1,4 +1,4 @@
-;GCD
+; 0s even or odd
 .386
 .model flat,stdcall
 .stack 4096
