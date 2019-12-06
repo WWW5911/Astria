@@ -216,7 +216,7 @@ PREL4:
 	call WriteDec
 	mov EDX, offset F5
 	call WriteString
-	mov EAX, 1
+	mov EAX, 2
 	call WriteDec
 	call Crlf
 	MOV EAX, ECX
@@ -232,7 +232,7 @@ PREL41:
 	call WriteString
 	call Crlf
 	;印到這
-	push EAX
+	MOV EAX, 1
 	mov [EBP-16], EAX
 	mov dword ptr [EBP-4], 2
 	inc ECX
